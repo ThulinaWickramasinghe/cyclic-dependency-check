@@ -1,0 +1,15 @@
+{
+  "name": "cyclic-dependency-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo: detect circular dependencies in TypeScript with madge",
+  "scripts": {
+    "deps:circular": "madge --circular --extensions ts --ts-config tsconfig.json src",
+    "deps:circular:graph": "madge --image graph.svg --extensions ts --ts-config tsconfig.json src",
+    "build": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "madge": "^8.0.0",
+    "typescript": "^5.7.2"
+  }
+}
